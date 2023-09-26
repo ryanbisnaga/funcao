@@ -1,0 +1,24 @@
+<!-- Leia um número e verifique se ele é par ou ímpar. Observação: para o número ser par,  o resto de sua divisão por dois deverá ser igual a zero -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#DCACD5">
+<div id="par">
+    <script>
+    let n1 = Number(prompt("Digite Um Número:"))
+    let resul = ""
+    if (n1%2==0 ){
+        resul = "O Número " + n1 + " é Par"
+    }
+    else{
+        resul = "O Número " + n1 + " é Ímpar"
+    }
+    document.getElementById("par").innerHTML= resul;
+    </script>
+</div>
+</body>
+</html>

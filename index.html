@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Soma</h1>
+    <div id="soma">
+    <script>
+        let n1 = Number(prompt("Digite Um Número Maior Que 100 Para Somar"))
+        let resul=""
+        if (n1 >= 100){
+            resul = n1 + 150 
+        }
+        else{  
+            resul = "Número Menor que 100"
+        }
+        document.getElementById("soma").innerHTML= n1 + " + " + " 150 " + " = " +  resul;
+    </script>
+    </div>
+</body>
+</html>

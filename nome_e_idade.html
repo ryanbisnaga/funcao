@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resul"></div>
+    <div id = "result"></div>
+    <script>
+        let nome1 = prompt("nome da primeira pessoa: ")
+        let ano1 = prompt(Number("ano de nascimento da pessoa: "))
+        let resul1 = 2023 - ano1
+
+        let nome2 = prompt("digite o nome da segunda pessoa: ")
+        let ano2 = prompt(Number("digite o ano de nascimento da pessoa:"))
+        let resul2 = 2023 - ano2
+        document.getElementById("resul").innerHTML = nome1 + " tem " + resul1 + " anos e " + nome2 + " tem " + resul2 + " anos ";
+        let resul = ""
+        if (ano1 > ano2){
+            resul = nome1 + " é mais novo que " + nome2
+        }
+        if (ano1 < ano2){
+            resul = nome2 + " é mais novo que " + nome1
+        }
+        if (ano1 == ano2)
+        
+        document.getElementById("result").innerHTML= resul;
+    </script>
+</body>
+</html>

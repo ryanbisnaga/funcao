@@ -1,0 +1,26 @@
+<!-- Uma empresa dá um prêmio aos funcionários que cumprem ou ultrapassam determinado valor de vendas de produtos. Para cada funcionário, foi estabelecido um  valor a ser alcançado. Faça um algoritmo para ler o valor fixado e o valor de vendas de  um funcionário. Depois, imprima a mensagem "Ganhou!" (caso o funcionário tenha conseguido o prêmio) e "Não ganhou!" (caso ele não tenha conquistado).  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#DCACD5">
+<div id="premio">
+    <script>
+        let valorfix = 100
+        let valorfunc = Number(prompt("Digite a Meta Atingida:"))
+        resul =""
+        if (valorfunc => valorfix){
+            resul = "Ganhoooouuuuuu!!!"
+        }
+        if (valorfunc < valorfix){
+            resul = "PERDEU!!"
+        }
+        document.getElementById("premio").innerHTML=resul;
+    </script>
+</div>    
+    
+</body>
+</html>

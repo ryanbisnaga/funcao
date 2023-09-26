@@ -1,0 +1,33 @@
+<!-- Leia dois valores e depois mostre a diferença entre eles -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#DCACD5">
+<div id="dif">
+    <script>
+        let n1 = Number(prompt("Digite Um Número:"))
+        let n2 = Number(prompt("Digite Outro Número:"))
+        let diferenca =""
+        let resul = ""
+        if (n1 > n2) {
+           diferenca = n1 - n2
+           resul = "A Diferença de " + n1 + " Para " + n2 + " é: " + diferenca 
+        }
+        if (n2 > n1) {
+           diferenca = n2 - n1
+           resul = "A Diferença de " + n2 + " Para " + n1 + " é: " + diferenca
+        }
+        if (n2 == n1){
+            resul = "Os Números São Iguais"
+        }
+        document.getElementById("dif").innerHTML=resul;
+    </script>
+
+
+</div>   
+</body>
+</html>
